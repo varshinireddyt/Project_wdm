@@ -1,0 +1,5 @@
+.customify-notice-wrapper,
+.trilisting-admin-wl-center-bl + .trilisting-admin-wl-center-bl + div,
+.trilisting-admin-wl-bottom-bl {
+    display: none;
+}

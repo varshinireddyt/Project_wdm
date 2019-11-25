@@ -1,0 +1,2943 @@
+/* 
+Theme Name:  BizDir
+Description: BizDir – WordPress directory listing theme built on top of Customify as parent theme and triListing plugin that provides directory listing features. Create your directory listing website in few clicks by using BizDir theme. Features: custom fields, accounts and profiles, advanced search form with filters, reviews and much more. Learn more by visiting theme home page. Let BizDir be one stop directory listing theme solution.
+Author:      handydata
+Author URI:  https://profiles.wordpress.org/handydata/
+Template:    customify
+Version:     1.0.2
+License:     GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:        custom-background, custom-logo, custom-menu, custom-logo, featured-images, flexible-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns, three-columns, left-sidebar, right-sidebar, blog
+Text Domain: bizdir
+*/
+.trilisting-category a,
+.trilisting-item-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.trilisting-category a,
+.trilisting-item-title,
+.trilisting-item-description p,
+.trilisting-author-meta .trilisting-autor-name,
+.trilisting-author-meta .trilisting-meta-date {
+    word-break: break-word;
+}
+
+.trilisting-category a,
+.trilisting-meta-views,
+.trilisting-item-title,
+.trilisting-item-description,
+.trilisting-author-meta .trilisting-autor-name,
+.trilisting-author-meta .trilisting-meta-date,
+.trilisting-post-like .trilisting-icons-hart,
+.trilisting-post-like .count {
+    letter-spacing: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.trilisting-date-post-end {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    padding-right: 5px;
+}
+
+.trilisting-item-no-img.trilisting-item-a .trilisting-item-details {
+    height: 100%;
+}
+
+@media only all and (max-width: 991px) {
+    .trilisting-item-no-img.trilisting-item-b .trilisting-block-meta {
+        margin-left: 0;
+    }
+}
+
+@media only all and (min-width: 992px) {
+    .trilisting-item-no-img.trilisting-item-b {
+        padding-left: 16px;
+    }
+}
+
+.trilisting-item-no-img.trilisting-item-b>.row {
+    height: 100%;
+}
+
+.trilisting-category {
+    margin-bottom: 8px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.trilisting-category .trilisting-category-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.trilisting-category a {
+    font-size: 12px;
+    line-height: 1.33;
+    color: #e91e63;
+}
+
+.trilisting-category a:hover,
+.trilisting-category a:active {
+    color: #d9b26f;
+}
+
+.trilisting-item-tile-wrap {
+    margin: 0 0 5px 0;
+}
+
+.trilisting-item-tile-wrap .fa-certificate {
+    color: #2196F3;
+}
+
+.trilisting-item-title {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+}
+
+.trilisting-item-title a {
+    color: #212121;
+}
+
+.trilisting-item-title a:hover {
+    color: #d9b26f;
+}
+
+.trilisting-item-description {
+    font-weight: 400;
+    line-height: 1.43;
+    overflow: hidden;
+}
+
+.trilisting-item-description p {
+    padding: 0;
+    margin: 0;
+}
+
+.trilisting-item {
+    border: 1px solid #eaecee;
+}
+
+.trilisting-item .trilisting-item-img {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.trilisting-item .trilisting-share-title {
+    display: none;
+}
+
+.trilisting-item .trilisting-field-trilisting_phone span.trilisting-text-value.trilisting-value {
+    display: none;
+}
+
+.trilisting-meta-comments .fa-comment {
+    margin-right: 5px;
+}
+
+.trilisting-item-img:after {
+    content: '';
+    display: block;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 54.35%;
+}
+
+.trilisting-item-img .trilisting-item-bg-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.trilisting-item-details {
+    padding: 12px 16px 16px 16px;
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-item-details {
+        padding: 12px 24px 16px 24px;
+    }
+}
+
+.trilisting-block-meta {
+    border-top: 1px solid #e3f2fd;
+    margin-top: 20px;
+    padding-top: 23px;
+}
+
+.trilisting-author-meta {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.trilisting-author-meta .trilisting-autor-name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.trilisting-author-meta .trilisting-meta-date {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1;
+    color: #888d9e;
+}
+
+.trilisting-author-meta .avatar {
+    border-radius: 50%;
+    margin-right: 17px;
+    height: 40px;
+    width: 40px;
+}
+
+.trilisting-author-meta:hover .trilisting-autor-name {
+    color: #d9b26f;
+}
+
+.trilisting-author-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.trilisting-block-meta-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.trilisting-right-meta {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.trilisting-item-a,
+.trilisting-item-b {
+    transition: box-shadow ease 0.3s;
+}
+
+.trilisting-item-a:hover,
+.trilisting-item-b:hover {
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trilisting-footer .trilisting-item .trilisting-category {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.trilisting-item .trilisting-average-rating-wrap {
+    margin-top: 7px;
+}
+
+.trilisting-item,
+.trilisting-item .trilisting-term-link {
+    color: #212121;
+}
+
+.trilisting-item .trilisting-term-link {
+    font-size: 14px;
+}
+
+.trilisting-item .trilisting-term-link:hover {
+    color: #d9b26f;
+}
+
+.trilisting-item:hover .trilisting-saved:not(.active) {
+    width: 71px;
+}
+
+.trilisting-item:hover .trilisting-saved:not(.active) .trilisting-saved-title {
+    opacity: 1;
+}
+
+.trilisting-item:hover .trilisting-saved.active {
+    width: 80px;
+}
+
+.trilisting-item:hover .trilisting-saved.active .trilisting-saved-title {
+    opacity: 1;
+}
+
+.trilisting-item .trilisting-saved {
+    position: absolute;
+    top: 10px;
+    right: 27px;
+    top: 23px;
+    font-size: 12px;
+    color: #fff;
+    color: #fff;
+    line-height: 1;
+    border-radius: 17px;
+    padding: 11px 14px;
+    display: block;
+    background: rgba(190, 203, 217, 0.7);
+    transition: background-color .3s ease, width .4s ease .3s;
+    width: 37px;
+    line-height: 1;
+    height: 34px;
+    overflow: hidden;
+}
+
+.trilisting-item .trilisting-saved .trilisting-saved-title {
+    margin-left: 8px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .4s ease .3s;
+    min-width: 50px;
+}
+
+.trilisting-item .trilisting-saved .fa-bookmark {
+    margin: 0;
+}
+
+.trilisting-item .trilisting-saved:hover {
+    background: rgba(190, 203, 217, 0.9);
+}
+
+.trilisting-item .trilisting-saved.active {
+    background: #2196F3;
+}
+
+.trilisting-item .trilisting-saved.active:hover {
+    background: rgba(33, 150, 243, 0.7);
+}
+
+.trilisting-item .trilisting-saved.active .fas.fa-bookmark {
+    color: #fff;
+}
+
+.trilisting-saved {
+    transition: background-color .3s ease;
+}
+
+.trilisting-saved .fas.fa-bookmark {
+    display: none;
+}
+
+.trilisting-saved .fas,
+.trilisting-saved .far {
+    margin-right: 0;
+}
+
+.trilisting-saved.active .far.fa-bookmark {
+    display: none;
+}
+
+.trilisting-saved.active .fas.fa-bookmark {
+    display: initial;
+    color: #212121;
+}
+
+#trilisting-dashboard .ac-posts-wrapper .trilisting-item-img .trilisting-term-link,
+.ac-posts-wrapper .type-trilisting_places .trilisting-item-img .trilisting-term-link {
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+    position: absolute;
+    top: 23px;
+    left: 27px;
+    z-index: 10;
+    line-height: 1;
+    color: #fff;
+    border-radius: 17px;
+    padding: 11px 13px;
+    margin: 0;
+}
+
+#trilisting-dashboard .ac-posts-wrapper .trilisting-item-img .trilisting-term-link:hover,
+.ac-posts-wrapper .type-trilisting_places .trilisting-item-img .trilisting-term-link:hover {
+    box-shadow: inset 0 0 0 120px rgba(0, 0, 0, 0.18);
+    color: #ffffff;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting-acf-field-trilisting_full_address_geolocation,
+.ac-posts-wrapper .trilisting_places .trilisting-acf-field-trilisting_full_address_geolocation {
+    display: none;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting-item-description,
+.ac-posts-wrapper .trilisting_places .trilisting-item-description {
+    font-size: 12px;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting-block-meta,
+.ac-posts-wrapper .trilisting_places .trilisting-block-meta {
+    padding-top: 12px;
+    margin-top: 0px;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting-block-meta-inner,
+.ac-posts-wrapper .trilisting_places .trilisting-block-meta-inner {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting-block-meta-inner .trilisting-field,
+.ac-posts-wrapper .trilisting_places .trilisting-block-meta-inner .trilisting-field {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting_category,
+.ac-posts-wrapper .trilisting_places .trilisting_category {
+    margin-top: 16px;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting-label,
+.ac-posts-wrapper .type-trilisting_places .trilisting-text-label,
+.ac-posts-wrapper .trilisting_places .trilisting-label,
+.ac-posts-wrapper .trilisting_places .trilisting-text-label {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisting-field-trilisting_phone .trilisting-text-label,
+.ac-posts-wrapper .trilisting_places .trilisting-field-trilisting_phone .trilisting-text-label {
+    display: none;
+}
+
+.ac-posts-wrapper .type-trilisting_places .trilisitng-item-icons .fa-map-marker-alt,
+.ac-posts-wrapper .type-trilisting_places .trilisitng-item-icons .fa-phone,
+.ac-posts-wrapper .trilisting_places .trilisitng-item-icons .fa-map-marker-alt,
+.ac-posts-wrapper .trilisting_places .trilisitng-item-icons .fa-phone {
+    margin-right: 8px;
+}
+
+.trilisting_widget_thumbnail_1 .trilisting-block-main {
+    margin-bottom: 0;
+}
+
+.trilisting-block-main {
+    margin-bottom: 12px;
+}
+
+.trilisting-footer .trilisting_widget_standard_1,
+.trilisting-footer .trilisting_widget_thumbnail_1 {
+    text-align: left;
+}
+
+.trilisting-block-meta-inner .trilisting-term {
+    margin-bottom: 0;
+}
+
+.trilisting-item .fa-certificate {
+    padding-right: 5px;
+}
+
+.trilisting-item-a {
+    height: 100%;
+}
+
+.trilisting-item-a .trilisting-item-img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.trilisting-item-a .trilisting-keep-reading {
+    margin-left: 4px;
+}
+
+.trilisting-item-a .trilisting-item-details {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: calc(100% - 200px);
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-item-b {
+        overflow: hidden;
+    }
+}
+
+.trilisting-item-b .trilisting-item-img {
+    height: 100%;
+}
+
+@media only all and (min-width: 768px) and (max-width: 1024px) {
+    .trilisting-item-b .trilisting-item-img {
+        position: initial;
+    }
+}
+
+@supports (display: -moz-flex) or (display: flex) {
+    @media only all and (min-width: 768px) and (max-width: 1024px) {
+        .trilisting-item-b .trilisting-item-img {
+            position: relative;
+        }
+    }
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-item-b .trilisting-item-img {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+.trilisting-item-b .trilisting-item-img:after {
+    padding-top: 0;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-item-b .sc-block-main {
+        margin-bottom: 20px;
+    }
+}
+
+.trilisting-item-b .trilisting-item-details {
+    padding: 12px 16px 24px 16px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-item-b .trilisting-item-details {
+        padding: 20px 24px 24px 16px;
+    }
+}
+
+.trilisting-item-b .trilisting-item-description>p {
+    overflow: hidden;
+}
+
+.trilisting-item-b .trilisting-keep-reading-inner {
+    text-align: right;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-item-b .trilisting-keep-reading-inner {
+        margin-top: 16px;
+    }
+}
+
+.trilisting-item-b .trilisting-keep-reading {
+    text-align: right;
+    margin-top: 45px;
+}
+
+.trilisting-item-b .trilisting-keep-reading:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.trilisting-item-b .trilisting-keep-reading span {
+    padding-right: 7px;
+}
+
+.trilisting-item-b .trilisting-keep-reading .fa {
+    font-size: 10px;
+}
+
+.trilisting-item-b .trilisting-block-meta {
+    margin-top: 16px;
+    padding-top: 25px;
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-item-b .trilisting-block-meta {
+        margin-left: -7px;
+    }
+}
+
+.trilisting_widget_standard_1 .trilisting-items-wrap>.col-md-12,
+.trilisting_widget_standard_1 .trilisting-items-wrap .owl-item>.col-md-12,
+.trilisting_widget_standard_1 .trilisting_widget_item_1 {
+    height: 100%;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting_widget_standard_1 .trilisting-items-wrap>.col-xs-12:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting_widget_standard_1 .trilisting-items-wrap>.col-xs-12 {
+        margin-bottom: 16px;
+    }
+}
+
+@media only all and (min-width: 768px) {
+
+    .trilisting_widget_standard_1 .trilisting-paginator.next-prev-wrap,
+    .trilisting_widget_standard_1 .trilisting-paginator {
+        margin-top: 0;
+    }
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting_widget_standard_1 .ac-posts-wrapper .col-xs-12 {
+        margin-bottom: 16px;
+    }
+}
+
+.trilisting_widget_blog_1 .wrap-trilisting-item-img-meta {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.trilisting_widget_blog_1 .wrap-trilisting-item-img-meta,
+.trilisting_widget_blog_1 .trilisting-item-link {
+    min-height: 280px;
+}
+
+@media only all and (max-width: 991px) {
+    .trilisting_widget_thumbnail_1 .trilisting-block-meta-inner .trilisting-left-meta {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+
+.trilisting_widget_thumbnail_1 .trilisting-block-meta {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.trilisting_widget_thumbnail_1 .trilisting-meta-date {
+    display: initial;
+}
+
+.trilisting_widget_thumbnail_1 .trilisting-item-title {
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.trilisting_widget_thumbnail_1 .trilisting-author-inner {
+    display: initial;
+}
+
+.trilisting_widget_thumbnail_1 .trilisting-autor-name {
+    padding-right: 7px;
+}
+
+.trilisting_widget_thumbnail_1 .ac-posts-wrapper>.row>.col-sm-12:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.trilisting_widget_thumbnail_1 .trilisting-items-wrap>.col-sm-12:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+@media only all and (max-width: 991px) {
+    .trilisting-listings {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+
+.trilisting-pagination {
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-pagination {
+        margin-bottom: 16px;
+    }
+}
+
+.trilisting-btn.hidden {
+    display: none;
+}
+
+.trilisting-numeric .page-number,
+.trilisting-numeric .prev.page-numbers,
+.trilisting-numeric .next.page-numbers,
+.trilisting-numeric .page-numbers {
+    font-size: 12px;
+    line-height: 1.67;
+}
+
+.trilisting-numeric .page-number:hover,
+.trilisting-numeric .prev.page-numbers:hover,
+.trilisting-numeric .next.page-numbers:hover,
+.trilisting-numeric .page-numbers:hover {
+    color: #d9b26f;
+}
+
+.trilisting-numeric>span.page-number {
+    color: #d9b26f;
+}
+
+.trilisting-numeric .page-number {
+    transition: color ease 0.3s;
+}
+
+.trilisting-numeric .next.page-numbers {
+    margin-left: 5px;
+}
+
+.trilisting-numeric .prev.page-numbers {
+    margin-right: 5px;
+}
+
+.trilisting-numeric .page-number,
+.trilisting-numeric .prev.page-numbers,
+.trilisting-numeric .next.page-numbers {
+    font-weight: normal;
+    color: #becbd9;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.trilisting-numeric .page-number,
+.trilisting-numeric .page-numbers {
+    font-weight: 600;
+    color: #212121;
+    padding: 5px;
+    margin: 0 3px;
+}
+
+.trilisting-numeric .page-numbers.dots:hover {
+    color: #212121;
+}
+
+.trilisting-numeric>span.page-number,
+.trilisting-numeric .page-numbers.current,
+.trilisting-woocommerce nav.woocommerce-pagination .page-numbers.current {
+    position: relative;
+    color: #d9b26f;
+}
+
+.trilisting-numeric>span.page-number:after,
+.trilisting-numeric .page-numbers.current:after,
+.trilisting-woocommerce nav.woocommerce-pagination .page-numbers.current:after {
+    content: '';
+    border-radius: 50%;
+    width: 4px;
+    background-color: #d9b26f;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    height: 4px;
+    top: 100%;
+    margin-top: -1px;
+    transition: opacity ease 0.3s;
+}
+
+.trilisting-woocommerce nav.woocommerce-pagination .page-numbers.current:after {
+    top: 83%;
+}
+
+.trilisting-loadmore-page a {
+    color: #becbd9;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    font-weight: 500;
+}
+
+.trilisting-loadmore-page a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.trilisting-loadmore-page a .fa {
+    margin-right: 8px;
+}
+
+.trilisting-loadmore-page a .trilisting-icons-load-more {
+    position: relative;
+}
+
+.trilisting-loadmore-page a .trilisting-icons-load-more:before {
+    content: '\F14E';
+    font-family: 'FontAwesome';
+    padding-right: 8px;
+}
+
+.trilisting-loadmore-page:hover,
+.trilisting-loadmore-page:hover a {
+    color: #d9b26f;
+}
+
+.trilisting-numeric,
+.trilisting-widgets-numeric-paginator,
+.trilisting-dashbord-pagination {
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #eaecee;
+}
+
+.trilisting-numeric ul.page-numbers,
+.trilisting-widgets-numeric-paginator ul.page-numbers,
+.trilisting-dashbord-pagination ul.page-numbers {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.trilisting-numeric li,
+.trilisting-widgets-numeric-paginator li,
+.trilisting-dashbord-pagination li {
+    padding: 0;
+    margin: 0;
+}
+
+.trilisting-numeric .prev.page-numbers,
+.trilisting-numeric .next.page-numbers,
+.trilisting-widgets-numeric-paginator .prev.page-numbers,
+.trilisting-widgets-numeric-paginator .next.page-numbers,
+.trilisting-dashbord-pagination .prev.page-numbers,
+.trilisting-dashbord-pagination .next.page-numbers {
+    text-transform: uppercase;
+}
+
+.trilisting-numeric .trilisting-list-page-link,
+.trilisting-numeric span.page-numbers,
+.trilisting-numeric a.page-numbers,
+.trilisting-widgets-numeric-paginator .trilisting-list-page-link,
+.trilisting-widgets-numeric-paginator span.page-numbers,
+.trilisting-widgets-numeric-paginator a.page-numbers,
+.trilisting-dashbord-pagination .trilisting-list-page-link,
+.trilisting-dashbord-pagination span.page-numbers,
+.trilisting-dashbord-pagination a.page-numbers {
+    font-weight: 600;
+    color: #212121;
+    padding: 5px;
+    margin: 0 3px;
+    font-size: 12px;
+    line-height: 1.67;
+}
+
+.trilisting-numeric .trilisting-list-page-link.active-page,
+.trilisting-numeric .trilisting-list-page-link.current,
+.trilisting-numeric span.page-numbers.active-page,
+.trilisting-numeric span.page-numbers.current,
+.trilisting-numeric a.page-numbers.active-page,
+.trilisting-numeric a.page-numbers.current,
+.trilisting-widgets-numeric-paginator .trilisting-list-page-link.active-page,
+.trilisting-widgets-numeric-paginator .trilisting-list-page-link.current,
+.trilisting-widgets-numeric-paginator span.page-numbers.active-page,
+.trilisting-widgets-numeric-paginator span.page-numbers.current,
+.trilisting-widgets-numeric-paginator a.page-numbers.active-page,
+.trilisting-widgets-numeric-paginator a.page-numbers.current,
+.trilisting-dashbord-pagination .trilisting-list-page-link.active-page,
+.trilisting-dashbord-pagination .trilisting-list-page-link.current,
+.trilisting-dashbord-pagination span.page-numbers.active-page,
+.trilisting-dashbord-pagination span.page-numbers.current,
+.trilisting-dashbord-pagination a.page-numbers.active-page,
+.trilisting-dashbord-pagination a.page-numbers.current {
+    position: relative;
+    color: #d9b26f;
+}
+
+.trilisting-numeric .trilisting-list-page-link.active-page:after,
+.trilisting-numeric .trilisting-list-page-link.current:after,
+.trilisting-numeric span.page-numbers.active-page:after,
+.trilisting-numeric span.page-numbers.current:after,
+.trilisting-numeric a.page-numbers.active-page:after,
+.trilisting-numeric a.page-numbers.current:after,
+.trilisting-widgets-numeric-paginator .trilisting-list-page-link.active-page:after,
+.trilisting-widgets-numeric-paginator .trilisting-list-page-link.current:after,
+.trilisting-widgets-numeric-paginator span.page-numbers.active-page:after,
+.trilisting-widgets-numeric-paginator span.page-numbers.current:after,
+.trilisting-widgets-numeric-paginator a.page-numbers.active-page:after,
+.trilisting-widgets-numeric-paginator a.page-numbers.current:after,
+.trilisting-dashbord-pagination .trilisting-list-page-link.active-page:after,
+.trilisting-dashbord-pagination .trilisting-list-page-link.current:after,
+.trilisting-dashbord-pagination span.page-numbers.active-page:after,
+.trilisting-dashbord-pagination span.page-numbers.current:after,
+.trilisting-dashbord-pagination a.page-numbers.active-page:after,
+.trilisting-dashbord-pagination a.page-numbers.current:after {
+    content: '';
+    border-radius: 50%;
+    width: 4px;
+    background-color: #d9b26f;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    height: 4px;
+    top: 100%;
+    margin-top: -1px;
+    transition: opacity ease 0.3s;
+}
+
+.trilisting-numeric .trilisting-list-page-link:hover,
+.trilisting-numeric span.page-numbers:hover,
+.trilisting-numeric a.page-numbers:hover,
+.trilisting-widgets-numeric-paginator .trilisting-list-page-link:hover,
+.trilisting-widgets-numeric-paginator span.page-numbers:hover,
+.trilisting-widgets-numeric-paginator a.page-numbers:hover,
+.trilisting-dashbord-pagination .trilisting-list-page-link:hover,
+.trilisting-dashbord-pagination span.page-numbers:hover,
+.trilisting-dashbord-pagination a.page-numbers:hover {
+    color: #d9b26f;
+}
+
+.trilisting-widgets-numeric-paginator .trilisting-list-page-link {
+    color: #212121;
+    margin: 0 3px;
+    font-size: 12px;
+    line-height: 1.67;
+}
+
+.trilisting-paginator.next-prev-wrap {
+    margin-top: 16px;
+}
+
+.trilisting-paginator.next-prev-wrap .ac-list-page-link {
+    background: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    color: #212121;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    padding: 0;
+    font-size: 21px;
+    padding-left: 3px;
+    border: 1px solid #eaecee;
+}
+
+.trilisting-paginator.next-prev-wrap .ac-list-page-link:hover {
+    color: #d9b26f;
+}
+
+.trilisting-paginator.next-prev-wrap .trilisting-prev-button {
+    margin-right: 8px;
+}
+
+.trilisting-title-ajax-filter .trilisting-title-dropdown-filter:hover {
+    color: #d9b26f;
+}
+
+.trilisting-title-ajax-filter .trilisting-title-dropdown-filter-list {
+    border-radius: 5px;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trilisting-title-ajax-filter .trilisting-title-dropdown-filter-list a {
+    text-transform: capitalize;
+}
+
+.trilisting-pagination {
+    border-top: 1px solid #f7f8f9;
+    border-radius: 0;
+}
+
+.trilisting-pagination .page-number {
+    padding: 0 7px;
+}
+
+.trilisting_widget_maps_1 {
+    margin: 0;
+    min-width: 302px;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting_widget_maps_1 {
+        min-width: 266px;
+    }
+}
+
+.trilisting_widget_maps_1 .trilisting-item-link {
+    height: 200px;
+}
+
+@media only all and (max-width: 767px) {
+
+    .trilisting_widget_maps_1 .trilisting-item-link,
+    .trilisting_widget_maps_1 .trilisting-item-img {
+        height: 100px;
+    }
+}
+
+.trilisting-map .gm-style-iw {
+    border-radius: 5px;
+}
+
+.trilisting-map .gm-style-iw .trilisting-item-map-fields-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.trilisting-map .gm-style-iw .trilisting-item-details {
+    padding-bottom: 0;
+}
+
+.trilisting-map .gm-style-iw .trilisting-acf-field-trilisting_full_address_geolocation {
+    width: 0;
+    display: none;
+}
+
+.trilisting-map .trilisting-item {
+    border: none;
+}
+
+.trilisting-map .gm-style .gm-ui-hover-effect {
+    background: transparent;
+}
+
+.trilisting-map .gm-style-iw button>img {
+    width: 18px !important;
+    height: 18px !important;
+    margin: 6px !important;
+    background: #fff;
+}
+
+.trilisting-single .trilisting-map {
+    min-height: 555px;
+}
+
+.trilisting-single .trilisting-map .gm-style-iw>div {
+    width: 312px !important;
+    max-width: 312px !important;
+}
+
+.trilisting-widget-taxonomy-template-default {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.trilisting-widget-taxonomy-template-default .trilisting-taxonomies-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-widget-taxonomy-template-default .trilisting-taxonomies-list {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.trilisting-widget-taxonomy-template-default .trilisting-font-awesome-value {
+    padding-right: 6px;
+}
+
+.trilisting-widget-taxonomy-template-default .trilisting-widget-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: -6px 16px 0 0;
+}
+
+.trilisting-widget-taxonomy-template-default .cat-item {
+    margin-bottom: 2px;
+}
+
+.trilisting-widget-taxonomy-template-default .cat-item a {
+    background: rgba(190, 203, 217, 0.9);
+    color: #212121;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    transition: background-color .3s ease;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.trilisting-widget-taxonomy-template-default .cat-item a:hover {
+    background: rgba(190, 203, 217, 0.8);
+}
+
+.trilisting-widget-taxonomy-template-default .cat-item a:after {
+    display: none;
+}
+
+.trilisting-widget-taxonomy-template-default .cat-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.trilisting-list-taxonomy-widget .trilisting-taxonomy-label {
+    display: none;
+}
+
+.trilisting-list-taxonomy-widget .trilisting-taxonomies-list {
+    list-style: none;
+}
+
+.trilisting-count-category {
+    padding-left: 10px;
+}
+
+.trilisting-taxonomies-list {
+    padding: 0;
+    margin: 0;
+}
+
+@media only all and (max-width: 767px) {
+    .widget.trilisting_taxonomies {
+        padding: 0 8px;
+    }
+
+    .widget.trilisting_taxonomies ul li {
+        margin-bottom: 8px;
+    }
+}
+
+.trilisting-widget-taxonomy-template-default .trilisting-tax-main-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.trilisting-widget-taxonomy-template-default .trilisting-tax-main-wrap .trilisting-font-awesome-value {
+    padding-right: 7px;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.trilisting-main-content .trilisting-widget-taxonomy-template-default {
+    max-width: 369px;
+}
+
+.trilisting-main-content .trilisting-widget-taxonomy-template-default a {
+    color: #212121;
+}
+
+.trilisting_taxonomies .trilisting-taxonomy-img {
+    display: none;
+}
+
+.trilisting-list-taxonomy-widget .trilisting-taxonomy-label {
+    display: none;
+}
+
+.trilisting-list-taxonomy-widget .trilisting-taxonomies-list {
+    list-style: none;
+}
+
+.trilisting-count-category {
+    padding-left: 10px;
+}
+
+.trilisting-taxonomies-list {
+    padding: 0;
+    margin: 0;
+}
+
+.trilisting-taxonomies-list>li.cat-item {
+    margin-left: 0;
+}
+
+@media only all and (max-width: 767px) {
+    .widget.trilisting_taxonomies {
+        padding: 0 8px;
+    }
+
+    .widget.trilisting_taxonomies ul li {
+        margin-bottom: 8px;
+    }
+}
+
+.trilisting-widget-taxonomy-template-default .trilisting-tax-main-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.trilisting-widget-taxonomy-template-default .trilisting-tax-main-wrap .trilisting-font-awesome-value {
+    padding-right: 7px;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.trilisting-main-content .trilisting-widget-taxonomy-template-default {
+    max-width: 369px;
+}
+
+.trilisting-main-content .trilisting-widget-taxonomy-template-default a {
+    color: #212121;
+}
+
+.trilisting_taxonomies .trilisting-taxonomy-img {
+    display: none;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-taxonomies-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-widget-taxonomy-template-featured .trilisting-taxonomies-list .cat-item:nth-child(2) {
+        width: 66.667%;
+        -webkit-flex-basis: 66.667%;
+        -ms-flex-preferred-size: 66.667%;
+        flex-basis: 66.667%;
+    }
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-font-awesome-value,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-font-awesome-value {
+    display: none;
+}
+
+.trilisting-widget-taxonomy-template-featured ul,
+.trilisting-widget-taxonomy-template-featured_2 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-tax-wrap,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-tax-wrap {
+    position: absolute;
+    z-index: 101;
+    top: 18px;
+    left: 31px;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-tax-wrap,
+.trilisting-widget-taxonomy-template-featured .trilisting-link,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-tax-wrap,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-link {
+    color: #fff;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-link,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-link {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-taqxonomy-img-image,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-taqxonomy-img-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow ease 0.3s;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-tax-cat-name,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-tax-cat-name {
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-count-category,
+.trilisting-widget-taxonomy-template-featured .trilisting-tax-cat-name,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-count-category,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-tax-cat-name {
+    font-size: 14px;
+    line-height: normal;
+}
+
+.trilisting-widget-taxonomy-template-featured .cat-item:hover .trilisting-tax-cat-name,
+.trilisting-widget-taxonomy-template-featured_2 .cat-item:hover .trilisting-tax-cat-name {
+    color: #d9b26f;
+}
+
+.trilisting-widget-taxonomy-template-featured .cat-item:hover .trilisting-taqxonomy-img-image,
+.trilisting-widget-taxonomy-template-featured_2 .cat-item:hover .trilisting-taqxonomy-img-image {
+    box-shadow: 1px 6px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-image-background,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-image-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-count-category,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-count-category {
+    display: block;
+    padding: 2px 0 0 0;
+}
+
+.trilisting-widget-taxonomy-template-featured,
+.trilisting-widget-taxonomy-template-featured_2 {
+    margin-top: 23px;
+    position: relative;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-link:after,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color .3s ease;
+}
+
+.trilisting-widget-taxonomy-template-featured .trilisting-link:hover:after,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-link:hover:after {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.trilisting-widget-taxonomy-template-featured .cat-item,
+.trilisting-widget-taxonomy-template-featured_2 .cat-item {
+    width: 100%;
+    position: relative;
+    height: 208px;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+@media only all and (min-width: 768px) {
+
+    .trilisting-widget-taxonomy-template-featured .cat-item,
+    .trilisting-widget-taxonomy-template-featured_2 .cat-item {
+        width: 33.333%;
+        -webkit-flex-basis: 33.333%;
+        -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+    }
+}
+
+.trilisting-widget-taxonomy-template-featured_2 .cat-item:first-child {
+    float: left;
+    height: 433px;
+    padding: 0;
+}
+
+.trilisting-widget-taxonomy-template-featured_2 .cat-item {
+    float: right;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 0;
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-widget-taxonomy-template-featured_2 .cat-item {
+        padding: 0 0 0 16px;
+    }
+}
+
+.trilisting-widget-taxonomy-template-featured_2 .cat-item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.trilisting-widget-taxonomy-template-featured_2 .cat-item:nth-child(8),
+.trilisting-widget-taxonomy-template-featured_2 .cat-item:nth-child(11) {
+    padding-left: 0;
+}
+
+.trilisting-widget-taxonomy-template-featured_2 .cat-item:after,
+.trilisting-widget-taxonomy-template-featured_2 .trilisting-widget-trilisting_category:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.trilisting-single-add-comment {
+    background: rgba(190, 203, 217, 0.7);
+    border-radius: 5px;
+    color: #212121;
+    font-weight: bold;
+    padding: 10px 20px;
+    line-height: 1.2;
+    display: inline-block;
+    font-size: 12px;
+    transition: background-color .3s ease;
+}
+
+.trilisting-single-add-comment:active,
+.trilisting-single-add-comment:hover,
+.trilisting-single-add-comment:focus {
+    color: #212121;
+}
+
+.trilisting-single-add-comment:hover {
+    background: rgba(190, 203, 217, 0.9);
+}
+
+.trilisting-single-add-comment .fa-bookmark,
+.trilisting-single-add-comment .fa-comment {
+    margin-right: 4px;
+}
+
+.trilisting-login {
+    margin-bottom: 10px;
+}
+
+.acf-input-prepend,
+.acf-input-append,
+.acf-input-wrap {
+    height: auto;
+}
+
+.trilisting-search-form .trilisting-form-filters {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.trilisting-search-form .trilisting-search-form-submit {
+    width: 100%;
+}
+
+.trilisting-search-form .trilisting-form-filters>li {
+    margin: 0;
+}
+
+.trilisting-search-form .trilisting-form-filters>li:first-child {
+    width: 50%;
+}
+
+.trilisting-search-form .trilisting-form-filters>li:not(:first-child):not(:last-child) {
+    width: 30%;
+}
+
+.trilisting-search-form .trilisting-form-filters>li:last-child {
+    width: 20%;
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisitng-search-archive .trilisting-map,
+    .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .trilisitng-search-archive .trilisting-listings {
+        height: calc(100vh - 123px);
+    }
+}
+
+@media only all and (min-width: 768px) and (max-width: 991px) {
+    .trilisitng-search-archive .trilisting_widget_standard_1 .trilisting-items-wrap>.col-xs-12 {
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media only all and (min-width: 992px) {
+
+    .admin-bar .trilisitng-search-archive .trilisting-map,
+    .admin-bar .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .admin-bar .trilisitng-search-archive .trilisting-listings {
+        height: calc(100vh - 155px);
+    }
+}
+
+@media only all and (min-width: 992px) {
+    .trilisting-archive-page #main.content-area {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .trilisting-archive-page .site-content>.customify-container {
+        padding: 0;
+    }
+
+    .trilisting-archive-page .site-content>.customify-container {
+        max-width: 100%;
+		background-color: #060F27;
+    }
+}
+
+.trilisting-archive-page #main.site-main.trilisting-listings {
+    padding: 0;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-archive-page #main {
+        padding-top: 0;
+    }
+
+    .trilisting-archive-page .trilisting-mobile-search-nav-wrap {
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+}
+
+.trilisting-archive-page,
+.tax-trilisting_features,
+.tax-trilisting_location,
+.tax-trilisting_category,
+.trilisting-search-page {
+    overflow-x: hidden;
+}
+
+.trilisting-archive-page .trilisting_widget_standard_1,
+.tax-trilisting_features .trilisting_widget_standard_1,
+.tax-trilisting_location .trilisting_widget_standard_1,
+.tax-trilisting_category .trilisting_widget_standard_1,
+.trilisting-search-page .trilisting_widget_standard_1 {
+    margin-bottom: 0;
+}
+
+.trilisting-archive-page #page-titlebar,
+.trilisting-archive-page #site-footer,
+.tax-trilisting_features #page-titlebar,
+.tax-trilisting_features #site-footer,
+.tax-trilisting_location #page-titlebar,
+.tax-trilisting_location #site-footer,
+.tax-trilisting_category #page-titlebar,
+.tax-trilisting_category #site-footer,
+.trilisting-search-page #page-titlebar,
+.trilisting-search-page #site-footer {
+    display: none;
+}
+
+.trilisting-archive-page .trilisting-main,
+.tax-trilisting_features .trilisting-main,
+.tax-trilisting_location .trilisting-main,
+.tax-trilisting_category .trilisting-main,
+.trilisting-search-page .trilisting-main {
+    margin-bottom: 0;
+}
+
+@media only all and (min-width: 992px) {
+    .trilisting-archive-page {
+        overflow-x: hidden;
+    }
+}
+
+.trilisting-archive-page .trilisting-topbar {
+    margin-bottom: 29px;
+}
+
+.trilisting-search-page .trilisitng-search-archive,
+.archive .trilisitng-search-archive {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-search-title,
+.archive .trilisitng-search-archive .trilisting-search-title {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media only all and (max-width: 767px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-search-title,
+    .archive .trilisitng-search-archive .trilisting-search-title {
+        margin: 5px 5px 10px;
+    }
+}
+
+@media only all and (max-width: 767px) {
+
+    .trilisting-search-page .trilisitng-search-archive,
+    .archive .trilisitng-search-archive {
+        margin-top: 16px;
+    }
+}
+
+@media only all and (max-width: 991px) {
+
+    .trilisting-search-page .trilisitng-search-archive,
+    .archive .trilisitng-search-archive {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-search-radio-wrap,
+.archive .trilisitng-search-archive .trilisting-search-radio-wrap {
+    padding: 0;
+}
+
+.trilisting-search-page .trilisitng-search-archive li,
+.archive .trilisitng-search-archive li {
+    padding-left: 0;
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-search-page .trilisitng-search-archive,
+    .archive .trilisitng-search-archive {
+        /* width */
+        /* Track */
+        /* Handle */
+    }
+
+    .trilisting-search-page .trilisitng-search-archive ::-webkit-scrollbar,
+    .archive .trilisitng-search-archive ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .trilisting-search-page .trilisitng-search-archive ::-webkit-scrollbar-track,
+    .archive .trilisitng-search-archive ::-webkit-scrollbar-track {
+        border-radius: 6px;
+    }
+
+    .trilisting-search-page .trilisitng-search-archive ::-webkit-scrollbar-thumb,
+    .archive .trilisitng-search-archive ::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: #ccc;
+    }
+}
+
+@media only all and (max-width: 991px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .trilisting-search-page .trilisitng-search-archive .trilisting-map,
+    .archive .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .archive .trilisitng-search-archive .trilisting-map {
+        margin-bottom: 16px;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap,
+.archive .trilisitng-search-archive .trilisting-search-slct-wrap {
+    background: #fff;
+    padding: 16px;
+    width: 100%;
+}
+
+@media only all and (max-width: 767px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .archive .trilisitng-search-archive .trilisting-search-slct-wrap {
+        padding-top: 0;
+    }
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .archive .trilisitng-search-archive .trilisting-search-slct-wrap {
+        width: 400px;
+        min-width: 400px;
+    }
+}
+
+@media only all and (min-width: 992px) and (max-width: 1100px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .archive .trilisitng-search-archive .trilisting-search-slct-wrap {
+        width: 300px;
+        min-width: 300px;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap .trilisting-search-slct-title,
+.archive .trilisitng-search-archive .trilisting-search-slct-wrap .trilisting-search-slct-title {
+    margin: 0 0 24px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap .trilisting-search-slct-desc,
+.archive .trilisitng-search-archive .trilisting-search-slct-wrap .trilisting-search-slct-desc {
+    font-size: 12px;
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .trilisting-search-page .trilisitng-search-archive .trilisting-listings,
+    .archive .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .archive .trilisitng-search-archive .trilisting-listings {
+        padding: 16px;
+    }
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .trilisting-search-page .trilisitng-search-archive .trilisting-listings,
+    .archive .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .archive .trilisitng-search-archive .trilisting-listings {
+        overflow-y: scroll;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-listings,
+.archive .trilisitng-search-archive .trilisting-listings {
+    z-index: 1;
+    width: 100%;
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-listings,
+    .archive .trilisitng-search-archive .trilisting-listings {
+        width: 400px;
+        min-width: 400px;
+        border-left: 1px solid #eaecee;
+    }
+}
+
+@media only all and (min-width: 992px) and (max-width: 1100px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-listings,
+    .archive .trilisitng-search-archive .trilisting-listings {
+        width: 350px;
+        min-width: 350px;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-listings .trilisting-saved .fas,
+.archive .trilisitng-search-archive .trilisting-listings .trilisting-saved .fas {
+    padding: 0;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-listings .fas,
+.archive .trilisitng-search-archive .trilisting-listings .fas {
+    padding-right: 5px;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-map,
+.archive .trilisitng-search-archive .trilisting-map {
+    border: none;
+    margin-top: 0;
+    width: 100%;
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-map,
+    .archive .trilisitng-search-archive .trilisting-map {
+        margin: 0;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-search-page .trilisitng-search-archive .col-xs-12,
+    .archive .trilisitng-search-archive .col-xs-12 {
+        max-width: 100%;
+        width: 100%;
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-tabs,
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters,
+.archive .trilisitng-search-archive .trilisting-archive-tabs,
+.archive .trilisitng-search-archive .trilisting-form-filters {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters>li,
+.archive .trilisitng-search-archive .trilisting-form-filters>li {
+    margin-left: 0;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters,
+.archive .trilisitng-search-archive .trilisting-form-filters {
+    display: block;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters>li,
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters>li.trilisting-cat-name,
+.archive .trilisitng-search-archive .trilisting-form-filters>li,
+.archive .trilisitng-search-archive .trilisting-form-filters>li.trilisting-cat-name {
+    width: 100%;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters .trilisting-cat-name,
+.archive .trilisitng-search-archive .trilisting-form-filters .trilisting-cat-name {
+    padding: 0;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters .trilisting-cat-name:not(:last-child),
+.archive .trilisitng-search-archive .trilisting-form-filters .trilisting-cat-name:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters .trilisting-cat-title,
+.archive .trilisitng-search-archive .trilisting-form-filters .trilisting-cat-title {
+    font-size: 12px;
+    margin: 27px 0 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-form-filters .trilisting-search-form-submit,
+.archive .trilisitng-search-archive .trilisting-form-filters .trilisting-search-form-submit {
+    min-height: 48px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.trilisting-search-page .trilisitng-search-archive .cat-item,
+.archive .trilisitng-search-archive .cat-item {
+    padding: 0;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-label,
+.archive .trilisitng-search-archive .trilisting-label {
+    font-size: 14px;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-filter-checkbox-type,
+.archive .trilisitng-search-archive .trilisting-filter-checkbox-type {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 10px;
+}
+
+@media only all and (min-width: 768px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-filter-checkbox-type,
+    .archive .trilisitng-search-archive .trilisting-filter-checkbox-type {
+        max-height: 139px;
+        overflow-y: scroll;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-filter-checkbox-type .active,
+.archive .trilisitng-search-archive .trilisting-filter-checkbox-type .active {
+    color: #2196f3;
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-filter-checkbox-type .cat-item,
+.archive .trilisitng-search-archive .trilisting-filter-checkbox-type .cat-item {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+
+@media only all and (min-width: 768px) {
+
+    .trilisting-search-page .trilisitng-search-archive .trilisting-filter-checkbox-type .cat-item,
+    .archive .trilisitng-search-archive .trilisting-filter-checkbox-type .cat-item {
+        max-width: 50%;
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+}
+
+.trilisting-search-page .trilisitng-search-archive .trilisting-filter-checkbox-type .cat-item input,
+.archive .trilisitng-search-archive .trilisting-filter-checkbox-type .cat-item input {
+    margin-right: 5px;
+}
+
+.trilisting-main-content>form.trilisting-search-form .select2-selection__arrow,
+.trilisting-main-content>form.trilisting-search-form .select2-selection__rendered,
+.trilisting-main-content>form.trilisting-search-form .select2-selection,
+.trilisting-search-page .trilisitng-search-archive .select2-selection__arrow,
+.trilisting-search-page .trilisitng-search-archive .select2-selection__rendered,
+.trilisting-search-page .trilisitng-search-archive .select2-selection,
+.archive .trilisitng-search-archive .select2-selection__arrow,
+.archive .trilisitng-search-archive .select2-selection__rendered,
+.archive .trilisitng-search-archive .select2-selection {
+    min-height: 48px;
+}
+
+.trilisting-main-content>form.trilisting-search-form .select2-container,
+.trilisting-search-page .trilisitng-search-archive .select2-container,
+.archive .trilisitng-search-archive .select2-container {
+    font-size: 12px;
+}
+
+.trilisting-main-content>form.trilisting-search-form .select2-container .select2-selection--single .select2-selection__rendered,
+.trilisting-search-page .trilisitng-search-archive .select2-container .select2-selection--single .select2-selection__rendered,
+.archive .trilisitng-search-archive .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 48px;
+}
+
+.trilisting-main-content>form.trilisting-search-form .select2-container--default .select2-selection--single .select2-selection__arrow,
+.trilisting-search-page .trilisitng-search-archive .select2-container--default .select2-selection--single .select2-selection__arrow,
+.archive .trilisitng-search-archive .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 9px;
+}
+
+.trilisting-main-content>form.trilisting-search-form .select2-container .select2-selection--single .select2-selection__rendered,
+.trilisting-search-page .trilisitng-search-archive .select2-container .select2-selection--single .select2-selection__rendered,
+.archive .trilisitng-search-archive .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 13px;
+}
+
+.trilisting-mobile-search-nav-wrap .trilisting-archive-tabs,
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-tabs,
+.archive .trilisitng-search-archive .trilisting-archive-tabs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 2px solid #becbd9;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.trilisting-mobile-search-nav-wrap .trilisting-archive-category,
+.trilisting-mobile-search-nav-wrap .trilisting-search-wrap,
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-category,
+.trilisting-search-page .trilisitng-search-archive .trilisting-search-wrap,
+.archive .trilisitng-search-archive .trilisting-archive-category,
+.archive .trilisitng-search-archive .trilisting-search-wrap {
+    display: none;
+}
+
+.trilisting-mobile-search-nav-wrap .trilisting-archive-category.active,
+.trilisting-mobile-search-nav-wrap .trilisting-search-wrap.active,
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-category.active,
+.trilisting-search-page .trilisitng-search-archive .trilisting-search-wrap.active,
+.archive .trilisitng-search-archive .trilisting-archive-category.active,
+.archive .trilisitng-search-archive .trilisting-search-wrap.active {
+    display: block;
+}
+
+.trilisting-mobile-search-nav-wrap .trilisting-archive-tab,
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-tab,
+.archive .trilisitng-search-archive .trilisting-archive-tab {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 8px 23px 4px 23px;
+    margin: 0;
+    position: relative;
+    min-width: 112px;
+    color: #becbd9;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+@media only all and (max-width: 767px) {
+
+    .trilisting-mobile-search-nav-wrap .trilisting-archive-tab,
+    .trilisting-search-page .trilisitng-search-archive .trilisting-archive-tab,
+    .archive .trilisitng-search-archive .trilisting-archive-tab {
+        min-width: 101px;
+        -webkit-flex-basis: 33.333%;
+        -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+    }
+}
+
+.trilisting-mobile-search-nav-wrap .trilisting-archive-tab:hover,
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-tab:hover,
+.archive .trilisitng-search-archive .trilisting-archive-tab:hover {
+    color: #2196f3;
+}
+
+.trilisting-mobile-search-nav-wrap .trilisting-archive-tab.active,
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-tab.active,
+.archive .trilisitng-search-archive .trilisting-archive-tab.active {
+    color: #2196f3;
+}
+
+.trilisting-mobile-search-nav-wrap .trilisting-archive-tab.active:after,
+.trilisting-search-page .trilisitng-search-archive .trilisting-archive-tab.active:after,
+.archive .trilisitng-search-archive .trilisting-archive-tab.active:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #2196f3;
+    bottom: -2px;
+}
+
+.trilisting-listings .trilisting-no-results {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-mobile-search-nav-wrap {
+        display: none;
+    }
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-search-slct-wrap {
+        display: none;
+    }
+
+    .trilisitng-search-archive .trilisting-map {
+        visibility: hidden;
+        position: absolute;
+        left: -99999999px;
+    }
+
+    .trilisitng-search-archive .trilisting-search-slct-wrap {
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .trilisitng-search-archive .trilisting-map {
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .trilisting-search-slct-desc {
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+
+    .trilisitng-search-archive .trilisting-archive-tabs-wrap {
+        display: none;
+    }
+
+    .trilisting-mobile-search-nav-wrap {
+        min-height: 48px;
+    }
+
+    .trilisting-mobile-search-nav-wrap .trilisting-search-mobile-tabs {
+        padding: 0;
+        list-style: none;
+        background: #f7f8f9;
+        margin: 0;
+        height: 55px;
+        transition: height .2s ease;
+    }
+
+    .trilisting-mobile-search-nav-wrap .trilisting-search-mobile-tabs .trilisting-search-mobile-tab {
+        padding: 13px 23px 8px 23px;
+    }
+
+    .trilisting-mobile-search-nav-wrap .trilisting-search-mobile-tabs span {
+        transition: opacity .2s ease;
+        opacity: 1;
+    }
+
+    .trilisting-mobile-search-nav-wrap.tril-sticky .trilisting-search-mobile-tabs {
+        margin: 0;
+        height: 35px;
+    }
+
+    .trilisting-mobile-search-nav-wrap.tril-sticky .trilisting-search-mobile-tabs .trilisting-search-mobile-tab span {
+        opacity: 0;
+    }
+
+    .trilisting-mobile-open-filter .trilisitng-search-archive .trilisting-listings>.trilisting-block,
+    .trilisting-mobile-open-map .trilisitng-search-archive .trilisting-listings>.trilisting-block {
+        display: none;
+    }
+
+    .trilisting-mobile-open-map .trilisitng-search-archive .trilisting-map {
+        visibility: visible;
+        position: relative;
+        left: 0;
+    }
+
+    .trilisting-mobile-open-filter .trilisitng-search-archive .trilisting-search-slct-wrap,
+    .trilisting-mobile-open-listing .trilisitng-search-archive .trilisting-listings>.trilisting-block {
+        display: block;
+    }
+}
+
+@media only all and (max-width: 767px) and (max-width: 767px) {
+    .trilisting-mobile-open-filter .trilisting-search-title {
+        display: none;
+    }
+}
+
+@media only all and (max-width: 767px) {
+    .admin-bar .trilisitng-search-archive .trilisting-map {
+        min-height: calc(100vh - 230px);
+    }
+}
+
+@media only all and (max-width: 767px) {
+    .trilisitng-search-archive .trilisting-map {
+        min-height: calc(100vh - 123px);
+    }
+}
+
+.trilisting-container-post {
+    margin-bottom: 16px;
+}
+
+.trilisting-item-img-single {
+    position: relative;
+    height: 450px;
+}
+
+.trilisting-single {
+    padding: 26px 16px 34px 16px;
+    background-color: #fff;
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-single {
+        padding: 26px 24px 24px 24px;
+    }
+}
+
+.trilisting-single .fa-reply:before {
+    content: "\F3E5";
+}
+
+.trilisting-single .trilisting-map {
+    margin: 6px 0 24px 0;
+}
+
+body.single .trilisting-share-title {
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 1;
+}
+
+body.single .trilisting-share-social .trilisting-share-ellipsis {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+body.single .trilisting-share-social .trilisting-share-ellipsis.active .share-dropup {
+    right: auto;
+    left: 100%;
+    top: -3px;
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+@media only all and (max-width: 767px) {
+    body.single .trilisting-share-social .trilisting-share-ellipsis.active .share-dropup {
+        width: 40px;
+        height: 125px;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        padding: 8px 0;
+        margin-left: 0;
+    }
+}
+
+body.single .trilisting-item-maps-a .trilisting-font-awesome-value {
+    font-size: 12px;
+}
+
+@media only all and (min-width: 992px) {
+    .trilisting-single-resents-posts>.col-md-12 {
+        padding: 0;
+    }
+}
+
+@media only all and (min-width: 992px) {
+
+    .trilisting-container-post.left-sidebar,
+    .trilisting-single-resents-posts.left-sidebar {
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .trilisting-container-post.right-sidebar,
+    .trilisting-single-resents-posts.right-sidebar {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .trilisting-container-post.no-sidebar,
+    .trilisting-single-resents-posts.no-sidebar {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .trilisting-container-post.no-sidebar {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .trilisting-custom-width-post {
+        max-width: 58.334%;
+        -webkit-flex: 0 0 58.334%;
+        -ms-flex: 0 0 58.334%;
+        flex: 0 0 58.334%;
+    }
+
+    .trilisting-cst-width-post-sidebar {
+        max-width: 33.421%;
+        -webkit-flex: 0 0 33.421%;
+        -ms-flex: 0 0 33.421%;
+        flex: 0 0 33.421%;
+    }
+}
+
+@media only all and (min-width: 1152px) {
+    .trilisting-single-resents-posts {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .trilisting-single-resents-posts>.col-lg-11 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.trilisting-category .trilisting-category-sep {
+    margin: 0 5px 0 6px;
+    width: 6px;
+    height: 6px;
+    background-color: #303338;
+    border-radius: 50%;
+}
+
+.trilisting-single {
+    border-radius: 5px;
+}
+
+.trilisting_widget_item_1 .trilisting-post-formats-icons {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 8px;
+    color: #ee6356;
+}
+
+.trilisting-sticky-post-icon {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    color: #2196f3;
+    min-height: 12.5px;
+}
+
+.trilisting-audio,
+.post_video {
+    text-align: center;
+}
+
+.trilisting-audio-frame,
+.post_video {
+    margin-bottom: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.trilisting-audio-frame>iframe,
+.post_video>iframe {
+    max-height: 360px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.visualSoundContainer {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.single .trilisting-main-posts .trilisting-category,
+.single .trilisting-single-details-wrap .trilisting-category {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+}
+
+.trilisting-single-bottom-meta {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-single-bottom-meta {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.trilisting-single-bottom-meta .trilisting-views-count {
+    padding-top: 2px;
+}
+
+.trilisting-single-bottom-meta,
+.trilisting-single-bottom-meta .trilisting-tags-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.trilisting-single-bottom-meta .trilisting-tags-inner .trilisting-tag-item {
+    font-size: 12px;
+    color: #a6c6e0;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-transform: capitalize;
+}
+
+.trilisting-single-bottom-meta .trilisting-tags-inner .trilisting-tag-item:hover {
+    color: #0079bf;
+}
+
+.trilisting-single-bottom-meta .trilisting-tags-inner .trilisting-tag-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+@media only all and (max-width: 767px) {
+    .trilisting-single-bottom-meta .trilisting-single-meta {
+        margin-top: 25px;
+    }
+}
+
+@media only all and (min-width: 768px) {
+    .trilisting-single-bottom-meta .trilisting-single-meta {
+        margin-left: auto;
+    }
+}
+
+.post-password-form label {
+    width: 100%;
+}
+
+.post-password-form input[name="post_password"] {
+    height: 48px;
+}
+
+.single .trilisting-main-posts .trilisting-share-social .trilisting-share-ellipsis {
+    padding: 0px 8px 0px 8px;
+}
+
+.single .trilisting-main-posts .trilisting-single-meta .trilisting-share-social {
+    margin-left: 8px;
+}
+
+.single .trilisting-main-posts .trilisting-share-social .trilisting-share-ellipsis.active .share-dropup {
+    top: -9px;
+}
+
+.single-trilisting_places #main {
+    padding-top: 0;
+}
+
+.single-trilisting_places .trilisting-font-awesome-value {
+    font-size: 16px;
+}
+
+.single-trilisting_places .trilisting-single {
+    padding: 0;
+    background-color: initial;
+}
+
+.single-trilisting_places .trilisting-single-tabs-wrap {
+    background: #fff;
+    margin-bottom: 16px;
+}
+
+@media only all and (min-width: 768px) {
+    .single-trilisting_places .trilisting-single-tabs-wrap {
+        margin-bottom: 32px;
+    }
+}
+
+.single-trilisting_places .trilisting-single-tabs .trilisting-count-comments {
+    padding-left: 5px;
+}
+
+.single-trilisting_places .trilisting-single-tabs-nav {
+    min-height: 40px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.single-trilisting_places .trilisitng-tab-edit-listing {
+    padding: 0;
+    margin: 0;
+}
+
+.single-trilisting_places .trilisting-link-edit-listing,
+.single-trilisting_places .trilisitng-single-tab-link {
+    padding: 13px 12px;
+    font-weight: 500;
+    color: #464B52;
+    box-shadow: none;
+    display: inline-block;
+    line-height: 1;
+}
+
+@media only all and (min-width: 768px) {
+
+    .single-trilisting_places .trilisting-link-edit-listing,
+    .single-trilisting_places .trilisitng-single-tab-link {
+        padding: 13px 22px;
+    }
+}
+
+.single-trilisting_places .trilisting-link-edit-listing:hover,
+.single-trilisting_places .trilisitng-single-tab-link:hover {
+    color: #d9b26f;
+}
+
+.single-trilisting_places .trilisitng-single-tab-inner {
+    margin: 0;
+    padding: 0;
+}
+
+.single-trilisting_places .trilisitng-single-tab-inner.active .trilisitng-single-tab-link {
+    position: relative;
+    color: #2196F3;
+}
+
+.single-trilisting_places .trilisitng-single-tab-inner.active .trilisitng-single-tab-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #2196F3;
+    transition: background-color .3s ease;
+}
+
+.single-trilisting_places .trilisitng-single-tab-inner.active .trilisitng-single-tab-link:hover {
+    color: #d9b26f;
+}
+
+.single-trilisting_places .trilisitng-single-tab-inner.active .trilisitng-single-tab-link:hover:after {
+    background: #d9b26f;
+}
+
+.single-trilisting_places .trilisting-single-block-nav,
+.single-trilisting_places .trilisting-single-tabs-nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.single-trilisting_places .trilisting-single-tabs-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.single-trilisting_places .trilisting-company-logo-inner {
+    position: relative;
+    top: -16px;
+    z-index: 102;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    display: inline-block;
+    margin: 0 24px;
+}
+
+@media only all and (max-width: 767px) {
+    .single-trilisting_places .trilisting-company-logo-inner {
+        display: none;
+    }
+}
+
+.single-trilisting_places .trilisting-company-logo-inner:after {
+    content: '';
+    position: absolute;
+    background-color: #3d3e3e;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.single-trilisting_places .trilisting-sidebar-places-wrap .widget .trilisting-block {
+    margin-bottom: 0;
+}
+
+.single-trilisting_places .trilisting-single-gallery-acf,
+.single-trilisting_places .trilisting-comments-wrap,
+.single-trilisting_places .trilisting-listings .widget,
+.single-trilisting_places .trilisting-sidebar-places-wrap .widget,
+.single-trilisting_places .trilisitng-single-info-box,
+.single-trilisting_places .trilisting-listings [class*="trilisting_widget"].trilisting-block:not(.trilisting_widget_maps_1) {
+    margin-bottom: 16px;
+}
+
+.single-trilisting_places .trilisting-single-gallery-acf,
+.single-trilisting_places .trilisting-comments-wrap,
+.single-trilisting_places .trilisting-listings .widget:not(.widget_media_image):not(.trilisting_shortcodes_widgets),
+.single-trilisting_places .trilisting-sidebar-places-wrap .widget:not(.trilisting_shortcodes_widgets),
+.single-trilisting_places .trilisitng-single-info-box {
+    padding: 16px 24px 1px 24px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #eaecee;
+}
+
+.single-trilisting_places .trilisting-listings .widget:not(.widget_media_image):not(.trilisting_shortcodes_widgets) {
+    padding-bottom: 16px;
+}
+
+.single-trilisting_places .trilisting-single-gallery-acf {
+    padding: 16px 8px 1px 8px;
+}
+
+.single-trilisting_places .trilisting-single-gallery-acf .trilisting-block-title {
+    padding-left: 16px;
+}
+
+.single-trilisting_places .trilisitng-single-location .trilisting-title,
+.single-trilisting_places .trilisitng-single-location .trilisting-title a,
+.single-trilisting_places .trilisitng-single-description .trilisting-title,
+.single-trilisting_places .trilisitng-single-description .trilisting-title a {
+    margin-bottom: 8px;
+}
+
+.single-trilisting_places .trilisting-single-city-block {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.single-trilisting_places .trilisting-single-city-block .trilisting-term-link {
+    margin-right: 16px;
+}
+
+.single-trilisting_places .trilisitng-single-features,
+.single-trilisting_places .trilisting-comments-wrap,
+.single-trilisting_places .trilisitng-single-category,
+.single-trilisting_places .trilisting-sidebar-places-wrap .widget:not(.trilisting_shortcodes_widgets),
+.single-trilisting_places .trilisitng-single-author,
+.single-trilisting_places .trilisitng-single-follow-us,
+.single-trilisting_places .trilisitng-single-city {
+    padding-bottom: 24px;
+}
+
+.single-trilisting_places .trilisitng-single-icons {
+    padding: 10px 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    margin-right: 16px;
+    font-size: 14px;
+}
+
+.single-trilisting_places .trilisitng-single-city .trilisting-term-link,
+.single-trilisting_places .trilisitng-single-city .trilisting-single-follow-link,
+.single-trilisting_places .trilisting-sidebar-places-wrap .trilisting-term-link,
+.single-trilisting_places .trilisting-sidebar-places-wrap .trilisting-single-follow-link {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.single-trilisting_places .trilisitng-single-city .trilisting-single-follow-link,
+.single-trilisting_places .trilisting-sidebar-places-wrap .trilisting-single-follow-link {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.single-trilisting_places .trilisitng-single-city .trilisting-term-link,
+.single-trilisting_places .trilisting-sidebar-places-wrap .trilisting-term-link {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #2196F3;
+}
+
+.single-trilisting_places .trilisitng-single-city .trilisting-term-link:hover,
+.single-trilisting_places .trilisting-sidebar-places-wrap .trilisting-term-link:hover {
+    color: #d9b26f;
+}
+
+.single-trilisting_places .trilisitng-single-icons-city {
+    background: #2196F3;
+}
+
+.single-trilisting_places .trilisting-single-follow-us-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.single-trilisting_places .trilisting-single-follow-us-links .trilisting-single-follow-link-inner {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.single-trilisting_places .trilisting-single-follow-us-links .trilisting-single-follow-link-inner:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.single-trilisting_places .trilisting-single-follow-us-links .trilisting-follow-icon {
+    margin-right: 16px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 37px;
+}
+
+.single-trilisting_places .trilisting-single-follow-link-facebook .trilisting-single-follow-link,
+.single-trilisting_places .trilisting-single-follow-link-facebook .trilisting-follow-icon {
+    color: #0079BF;
+    border-color: #0079BF;
+}
+
+.single-trilisting_places .trilisting-single-follow-link-twitter .trilisting-single-follow-link,
+.single-trilisting_places .trilisting-single-follow-link-twitter .trilisting-follow-icon {
+    color: #0079bf;
+    border-color: #0079bf;
+}
+
+.single-trilisting_places .trilisting-single-follow-link-youtube .trilisting-single-follow-link,
+.single-trilisting_places .trilisting-single-follow-link-youtube .trilisting-follow-icon {
+    color: #CD201F;
+    border-color: #CD201F;
+}
+
+.single-trilisting_places .trilisting-single-follow-link-instagram .trilisting-single-follow-link,
+.single-trilisting_places .trilisting-single-follow-link-instagram .trilisting-follow-icon {
+    color: #E12F67;
+    border-color: #E12F67;
+}
+
+.single-trilisting_places .trilisting-single-follow-link-twitch .trilisting-single-follow-link,
+.single-trilisting_places .trilisting-single-follow-link-twitch .trilisting-follow-icon {
+    color: #6441A5;
+    border-color: #6441A5;
+}
+
+.single-trilisting_places .trilisting-single-follow-link-inner .trilisting-single-follow-link:hover {
+    color: #d9b26f;
+}
+
+.single-trilisting_places .trilisitng-single-category .trilisting-tax-img-wrap,
+.single-trilisting_places .trilisitng-single-features .trilisting-tax-img-wrap {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 16px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.single-trilisting_places .trilisitng-single-category .trilisting-image,
+.single-trilisting_places .trilisitng-single-features .trilisting-image {
+    height: 16px;
+    width: 16px;
+}
+
+.single-trilisting_places .trilisitng-single-category .trilisting-tax-img-wrap {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.single-trilisting_places .trilisting-term-link:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.single-trilisting_places .trilisitng-single-features .trilisting-tax-img-wrap {
+    border: 2px solid #212121;
+    color: #212121;
+}
+
+.single-trilisting_places .trilisitng-single-features .trilisting-term-link {
+    color: #212121;
+}
+
+.single-trilisting_places .trilisitng-single-features .trilisting-term-link:hover {
+    color: #d9b26f;
+}
+
+.single-trilisting_places .trilisting-comments-area {
+    margin-top: 0;
+}
+
+.single-trilisting_places .trilisting-article-comments-count {
+    border: none;
+}
+
+.single-trilisting_places .trilisting-article-comments-count .trilisting-title {
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: left;
+    line-height: 1;
+}
+
+.single-trilisting_places .trilisitng-single-location {
+    position: relative;
+}
+
+.single-trilisting_places .trilisting-map-direction {
+    color: #2196F3;
+    font-weight: 500;
+    position: absolute;
+    top: 14px;
+    right: 24px;
+}
+
+.single-trilisting_places .trilisting-map-direction:hover {
+    color: #d9b26f;
+}
+
+.single-trilisting_places .trilisting-map-direction .fa-location-arrow {
+    margin-right: 5px;
+}
+
+@media only all and (max-width: 991px) {
+    .single .trilisting-sidebar {
+        margin-top: 0;
+    }
+}
+
+.trilisting-single-tmpl-1 .trilisting-title,
+.trilisting-single-tmpl-1 .trilisting-title a {
+    font-size: 16px;
+    margin-bottom: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body .mfp-wrap,
+body .mfp-bg {
+    z-index: 99999;
+}
+
+.trilisting-single-meta>a:not(:last-child) {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.trilisting-single-phone .fa-phone {
+    margin-right: 7px;
+}
+
+.trilisting-single-details .trilisting-single-title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.trl-work-time {
+    margin-top: 0;
+}
+
+.trilisting-dashboard-my-list .trilisting-dashboard-actions {
+    list-style: none;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.trilisting-dashboard-my-list .trilisting-dashboard-actions li:first-child {
+    margin-left: 0;
+}
+
+.trilisting-dashboard-my-list .trilisitng-listing-title {
+    font-size: 30px;
+}
+
+.trilisting-dashboard-my-list .trilisting-term-link {
+    margin-right: 8px;
+}
+
+#trilisting-dashboard .trilisitng-dashboard-thumn-link {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.trilisting-dashboard-nav .trilisting-dashboard-nav-links {
+    margin-top: 0;
+}
+
+.trilisting-item-img .trilisting-term-link {
+  background-color: #c3512f;
+}
